@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-image: linear-gradient(#0d0054,#2612d6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav> ul> li{
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 10px 0px;
+    margin-left: -15px;
+
+}
+nav> ul{
+    display: flex;
+    margin-right: 50px;
+}
+nav> ul> li> a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-right: 1px solid #fff;
+    padding: 10px 10px;
+    transition: 0.5s;
+
+}
+nav> ul> li:hover>a{
+    background: red;
+}
+nav> ul> li:first-child> a{
+    border-left: 1px solid #fff;
+    
+}
+.logo{
+    color:#fff;
+    margin-left: 50px;
+    
+}
+.first{
+    font-size: 45px;
+    color:red;
+}
+
+/*drop dawon menu code start*/ 
+.sokina{
+    opacity: 0;
+    visibility: hidden;
+    background: #0d0054;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    width: 132px;
+    transition: 0.5s;
+    box-shadow: 15PX 15PX 15PX black;
+    transform: scaleY(0);
+    transform-origin: top;
+    
+}
+.sokina>li{
+    list-style-type: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+    }
+    .sokina>li:hover{
+        background: crimson;
+    }
+    .sokina>li:first-child{
+        border-top: 1px solid #fff;
+    }
+.sokina>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav>ul>li:hover>.sokina{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+   /* hero area css start */
+   #main-header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082),rgba(0, 0, 0, 0.616)), url('web header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+
+
+   }
+   .container{
+    padding-top: 100px;
+   }
+   .container>h1{
+    background-color: rgba(113, 46, 175, 0.733);
+    text-transform: capitalize;
+    width: 500px;
+    margin: 20px auto;
+    font-size: 50px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #fff;
+    animation: kola 13s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0ch;
+
+   }
+   @keyframes kola{
+      0%{
+         width: 0ch;
+      }
+      50%{
+         width: 28ch;
+      }
+      
+   }
+   .container>button{
+    padding: 10px 20px;
+    background-color: crimson;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-radius:20px;
+    border:2px solid blue;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+
+
+    
+   }
+   .container>button:hover{
+    background: rgba(139, 0, 139, 0.103);
+   }
+   .container>h4{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: rgba(5, 4, 4, 0.863);
+   }
+   .container>h5{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: rgba(5, 4, 4, 0.863);
+    margin-bottom: 20px;
+   }
+   .container>.social>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    
+   }
+   .container>.social>a>i{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(212, 20, 20, 0.014);
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 50%;
+    border: 2px solid rgb(247, 242, 242);
+    transition: 0.5s;
+   
+   }
+   .container>.social>a>i:hover{
+    background-color: rgba(238, 16, 16, 0.966);
+    border:2px solid goldenrod;
+    transform: rotate(360deg);
+   }
+
+     /*main area start code*/
+     .kolera{
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+
+
+     }
+     .Learn-programming{
+        width: 300px;
+        text-align: center;
+        padding: 30px 10px;
+        transition: 0.5s;
+
+     }
+     .Learn-programming>i{
+        font-size: 50px;
+     }
+     .Learn-programming>h2{
+        margin: 15px 0;
+     }
+     .Learn-programming:hover{
+        box-shadow: 3px 3px 10px gray;
+     }
+
+     .Web-development{
+        width: 300px;
+        text-align: center;
+        padding: 30px 10px;
+        transition: 0.5s;
+
+
+     }
+     .Web-development>i{
+        font-size: 50px;
+
+     }
+     .Web-development>h2{
+        margin: 15px 0;
+
+     }
+     .Web-development:hover{
+        box-shadow: 3px 3px 10px gray;
+     }
+     .Learn-Freelancing{
+        width: 300px;
+        text-align: center;
+        padding: 30px 10px;
+        transition: 0.5s;
+
+
+     }
+     .Learn-Freelancing>i{
+        font-size: 50px;
+
+
+     }
+     .Learn-Freelancing>h2{
+        margin: 15px 0;
+     }
+     .Learn-Freelancing:hover{
+        box-shadow: 3px 3px 10px gray;
+     }
+
+     /*second section code start here*/
+     .smart-area{
+        font-size: 20px;
+        text-transform: capitalize;
+        text-align: center;
+        position: relative;
+        
+     }
+     .smart-area>h2::after{
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 5px;
+        top:50px;
+        left: 630px;
+        background-color: rgb(255, 80, 80);
+     }
+     .mouse{
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        margin: auto;
+     }
+     .jorina{
+        width: 500px;
+        margin: 40px 0;
+     }
+     .jorina>h3{
+        text-transform: capitalize;
+        color: brown;
+     }
+     .jorina>h2{
+        text-transform: capitalize;
+        padding: 15px 0;
+     }
+     .jorina>a{
+        text-decoration: none;
+        background-color: brown;
+        font-size: 20px;
+        padding: 10px 15px;
+        color: #fff;
+        text-transform: capitalize;
+        display: inline-block;
+        margin: 15px 0;
+        border-radius: 5px;
+
+     }
+     .jorina>a:hover{
+        background: rgb(214, 61, 5);
+     }
+     .jorina>p{
+        text-align: justify;
+     }
+     /*third section code start here*/
+     #third-section{
+      background-color: #fafafa;
+     }
+     .service-area-title{
+      text-align: center;
+      padding: 50px 0;
+     }
+     .service-area-title>h2{
+      font-size: 40px;
+      text-transform: capitalize;
+     }
+     .parent-div{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      padding-bottom: 60px;
+     }
+     .grand-father{
+      width: 1000px;
+      margin: auto;
+     }
+     .div-one{
+      background-color: lightblue;
+      text-align: center;
+      padding: 30px 0;
+      transition: 0.5s;
+     }
+     .div-one>i{
+      font-size: 40px;
+      color: brown;
+     }
+     .div-one>h3{
+      margin: 15px 0;
+     }
+     .div-one:hover{
+      background-color: rgb(154, 208, 226);
+
+   }
+   /*fourth section code start here*/
+   .fourth-section{
+      background-color: whitesmoke;
+   }
+   .pricing-area-perent{
+      width: 1000px;
+      margin: auto;
+      padding-bottom: 100px;
+   }
+   .pricing-area-container{
+      display: flex;
+      justify-content: space-between;
+   }
+   .pricing-title{
+      text-align: center;
+      font-size: 35px;
+      padding: 50px 0;
+      text-transform: capitalize;
+   }
+   .single-card-img{
+      width: 310px;
+      
+     
+   }
+   .single-card-img>img{
+      max-width: 100%;
+   }
+   .single-card{
+      width: 310px;
+      text-align: center;
+      box-shadow: 5px 5px 10px gray;
+   }
+   .single-card>h3{
+      padding: 10px 0;
+   }
+   .month-pricing{
+      border-top: 1px dashed grey;
+      border-bottom: 1px dashed grey;
+      padding: 15px 0;
+      margin: 15px 20px;
+   }
+   .single-card > button{
+      background-color: rgb(100, 12, 12);
+      color: #fff;
+      padding: 10px 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .single-card>button:hover{
+      background-color: rgba(100, 12, 12, 0);
+      color: black;
+   }
+   .single-card > a{
+      text-decoration: none;
+      display: inline-block;
+      margin: 15px 0;
+      text-transform: capitalize;
+   }
+   
+   /* fifth section code start here*/
+   #five-section{
+      background-color: bisque;
+   }
+   #ganja{
+      width: 1000px;
+      
+      margin: auto;
+      padding-bottom: 100px;
+      
+   }
+   .testi-title{
+      text-align: center;
+      padding: 50px 0;
+   }
+   .testi-title h2{
+      font-size: 30px;
+      margin-bottom: 10px;
+   }
+   .testi-title h4{
+      color: gray;
+      letter-spacing: 0.3em;
+   }
+   .parent{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+   }
+   .single-div{
+      display: flex;
+      align-items: center;
+      background-color:#fff;
+      padding: 20px;
+   }
+   .testo-singleimg{
+      width: 200px;
+      margin-right: 20px;
+      
+      
+   }
+   .testo-singleimg img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid red;
+
+   }
+   .testo-span{
+      font-size: 22px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      display: inline-block;
+   }
+   .star-rating{
+      color: #ffa534;
+      margin-top: 10px;
+   }
+   /*six number section code start here parrallex*/
+   #parrallex{
+      background-image: url(parallax.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 80px 0;
+      
+   }
+   .parrallex-parent{
+      display: flex;
+      width: 1000px;
+      justify-content: space-between;
+      margin: auto;
+      text-align: center;
+      color: #fff;
+      text-transform: capitalize;
+   }
+   .parrallex-icon i{
+      font-size: 40px;
+   }
+   .parrallex-icon h2{
+      font-size: 40px;
+      margin: 20px 0;
+   }
+/* blog section code start here */
+.blog-container{
+width: 1000px;
+
+margin: auto;
+
+}
+.blog-item-parent{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 25px;
+}
+.blog{
+   max-width: 100%;
+   height: 250px;
+   transition: 0.5s;
+  
+}
+.blog-imag-icon{
+   position: relative;
+   overflow: hidden;
+
+   
+}
+.blog-icon{
+   position: absolute;
+   top:0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-content: center;
+   text-align: center;
+   color: #fff;
+   font-size: 22px;
+   opacity: 0;
+   transition: 0.5s;
+}
+.blog-imag-icon:hover .blog-icon{
+   opacity: 1;
+   background-color: rgba(0, 0, 0, 0.267);
+}
+.blog-imag-icon:hover .blog{
+   transform: scale(1.6);
+   
+}
+.blog-icon i{
+   font-size: 40px;
+   margin-bottom: 20px;
+
+}
+.single-item-text{
+   text-transform: capitalize;
+   text-align: center;
+   margin: 10px 0;
+}
+.single-item-text p{
+   color: grey;
+   word-spacing: .3em;
+   margin-top: 5px;
+}
+/*contact section code atart here*/
+.contact-container{
+   width: 1000px;
+   margin: auto;
+   
+   padding-bottom: 100px;
+}
+.form-parent{
+   background-color: #EAECF0;
+   display: flex;
+}
+.email-parent{
+   display: flex;
+}
+.email-parent input{
+   width: 200px;
+   height: 40px;
+   margin: 0 20px;
+   border: none;
+   padding: 0px 10px;
+}
+.email-parent h4{
+   margin: 40px 20px 10px 20px;
+}
+.form-tag{
+   width: 600px;
+}
+.input-title{
+   margin: 20px 20px 10px 20px;
+}
+.subject-input{
+   width: 85%;
+   height: 40px;
+   margin: 0px 20px;
+   border: none;
+   padding: 0px 10px;
+}
+.text-area{
+   width: 85%;
+   height: 100px;
+   border: none;
+   margin: 0px 20px;
+   padding: 5px 10px;
+}
+.button{
+   background-color: #3252AF;
+   color: #fff;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   margin: 20px 0 0 20px;
+}
+.address-form{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+   text-align: center;
+}
+.moto i{
+   background-color: #3252AF;
+   padding: 20px;
+   color:#fff;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+/*footer code start here*/
+footer{
+   background-color: rgb(3, 3, 59);
+}
+.footer-container{
+   width: 1000px;
+   margin: auto;
+}
+.parent-moto{
+   display: flex;
+   justify-content: space-between;
+}
+.singam-sir{
+   width: 220px;
+   color: gray;
+}
+.singam-sir h3{
+   color:#fff;
+   margin: 50px 0px 20px 0px;
+}
+.singam-sir i{
+   color: #fff;
+}
+.pera{
+   margin-bottom: 10px;
+   
+}
+.patlo{
+   margin: 10px 0px;
+}
+.parent-moto .singam-sir:nth-child(2) p{
+   margin: 10px 0px;
+}
+.parent-moto .singam-sir:nth-child(3) p{
+   margin: 10px 0px;
+}
+.parent-moto .singam-sir:nth-child(4) p{
+   margin: 10px 0px;
+}
+.parent-moto .singam-sir:nth-child(4) a{
+   text-decoration: none;
+   color: brown;
+
+}
+.cha-wala ul{
+display: flex;
+justify-content: center;
+}
+.cha-wala li{
+   list-style-type: none;
+   margin: 20px;
+
+}
+.cha-wala a{
+   text-decoration: none;
+   font-size: 20px;
+   text-transform: capitalize;
+   color: gray;
+   font-weight: bold;
+
+}
+.cha-wala p{
+   color: gray;
+   text-align: center;
+   padding-bottom: 20px;
+}
+.cha-wala span{
+   color:brown;
+}
+hr{
+   margin-top: 40px;
+}
