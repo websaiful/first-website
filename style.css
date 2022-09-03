@@ -86,7 +86,7 @@ nav>ul>li:hover>.sokina{
 
    /* hero area css start */
    #main-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.082),rgba(0, 0, 0, 0.616)), url('web header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082),rgba(0, 0, 0, 0.616)), url('img/web header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -450,7 +450,7 @@ nav>ul>li:hover>.sokina{
    }
    /*six number section code start here parrallex*/
    #parrallex{
-      background-image: url(parallax.jpg);
+      background-image: url(img/parallax.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
